@@ -52,6 +52,9 @@ plt.show()
 [This repository](https://github.com/mathbeveridge/gameofthrones) hosts character interaction data for Game of Thrones, with one edge file per season. We can combine all the files and plot the results, and note we can modify the width (as Gephi does) according to the weight of the edges too:
 
 ```python
+# Imports
+import pandas as pd
+
 # Concatenate seasons 1-7
 got_data = 'got-s{}-edges.csv'
 dfg = pd.DataFrame()
