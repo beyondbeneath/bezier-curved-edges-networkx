@@ -11,9 +11,9 @@ This defaults to using Gephi's Bezier curve defintion, in which you travel `0.2`
 
 ## Dependencies
 
-* `networkx==2.2`
-* `bezier==0.9.0`
-* `fa2==0.3.5` (for producing the layouts in the examples)
+* [NetworkX](https://networkx.github.io/): `networkx==2.2`
+* [Bezier](https://pypi.org/project/bezier/): `bezier==0.9.0`
+* [ForceAtlas2](https://github.com/bhargavchippada/forceatlas2): `fa2==0.3.5` (for producing the layouts in the examples)
 
 ## Sample usage
 
