@@ -13,7 +13,7 @@ def curved_edges(G, pos, dist_ratio=0.2, bezier_precision=20, polarity='random')
     else:
         # Create a fixed (hashed) polarity column in the case we use fixed polarity
         # This is useful, e.g., for animations
-        end = np.where(np.mod(np.vectorize(hash)(edges[:,0])+np.vectorize(hash)(edges[:,1]),2)==0,-1,1)
+        rnd = np.where(np.mod(np.vectorize(hash)(edges[:,0])+np.vectorize(hash)(edges[:,1]),2)==0,-1,1)
     
     # Coordinates (x,y) of both nodes for each edge
     # e.g., https://stackoverflow.com/questions/16992713/translate-every-element-in-numpy-array-according-to-key
