@@ -3,6 +3,8 @@
 | <img src="https://github.com/beyondbeneath/bezier-curved-edges-networkx/blob/master/example-atlassian.png" height=200px> | <img src="https://github.com/beyondbeneath/bezier-curved-edges-networkx/blob/master/example-fb.png" height=200px> | <img src="https://github.com/beyondbeneath/bezier-curved-edges-networkx/blob/master/example-got.png" height=200px> |
 |---|---|---|
 
+NB: code was originally written in July 2017, and first published here in April 2019.
+
 This function (`curved_edges` in `curved_edges.py`) creates some curved Bezier edges for a NetworkX graph. The original motivation was to mimic the types of edge curves found in [Gephi](https://gephi.org/) when I was producing an [animation](https://www.atlassian.com/blog/inside-atlassian/teamwork-data-visualization) showing the ForceAtlas2 algorithm converging. While it now appears NetworkX offers some kind of curved edges (though only for directed graphs, via the `connectionstyle` property of `FancyArrowPatch`) this is substantially faster and more versatile.
 
 This defaults to using Gephi's Bezier curve defintion, in which you travel `0.2` distance units (of the length of the line connecting the two nodes) from each node toward each other (magenta markers); then travel that same distance again but perpendicular to the connecting line (the red 'control points'). The nodes along with these control points, now define the curve by four `(x,y)` coordinates. 
