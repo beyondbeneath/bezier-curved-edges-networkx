@@ -29,6 +29,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.collections import LineCollection
 from fa2 import ForceAtlas2
+from curved_edges import curved_edges
 
 # Load the graph edges and compute the node positions using ForceAtlas2
 G = nx.read_edgelist('facebook_combined.txt')
@@ -55,7 +56,11 @@ plt.show()
 
 ```python
 # Imports
-import pandas as pd
+import networkx as nx
+import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
+from fa2 import ForceAtlas2
+from curved_edges import curved_edges
 
 # Concatenate seasons 1-7
 got_data = 'got-s{}-edges.csv'
